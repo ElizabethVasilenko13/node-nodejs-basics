@@ -8,9 +8,7 @@ const list = async () => {
 
   try {
     const files = await fs.readdir(filePath);
-    files.forEach(file => {
-      console.log('file name -', file);
-    });
+    console.log(files);
   } catch {
     throw new Error('FS operation failed');
   }
